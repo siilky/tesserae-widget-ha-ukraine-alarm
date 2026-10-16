@@ -6,6 +6,10 @@ region of Ukraine, from the Home Assistant
 integration. Every active alert is a tile with its type and start time; below
 them a timeline marks the alert periods of the last hours.
 
+![Two active alerts above the alert timeline](screenshots/lg.png)
+
+![No active alerts](screenshots/clear.png)
+
 ## What it does
 
 - Reads the region's alert sensors and their history through the shared
