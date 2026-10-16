@@ -1,0 +1,18 @@
+{
+  "alert.air": "Повітряна",
+  "alert.air_red": "Ракети (червона)",
+  "alert.air_yellow": "Дрони (жовта)",
+  "alert.artillery": "Артобстріл",
+  "alert.urban_fights": "Вуличні бої",
+  "alert.chemical": "Хімічна",
+  "alert.nuclear": "Радіація",
+  "alert.unknown": "Тривога",
+  "title.default": "Тривоги",
+  "setup.select_region": "Оберіть регіон Ukraine Alarm.",
+  "error.missing_core": "Встановіть і налаштуйте Home Assistant Core для цього віджета.",
+  "error.fetch": "Не вдалося отримати поточні стани Home Assistant. Перевірте налаштування Home Assistant Core.",
+  "error.no_region": "Немає даних Ukraine Alarm для цього регіону. Перевірте інтеграцію ukraine_alarm у Home Assistant.",
+  "status.clear": "Тривог немає",
+  "status.since": "з {time}",
+  "status.history_error": "Не вдалося завантажити історію тривог"
+}

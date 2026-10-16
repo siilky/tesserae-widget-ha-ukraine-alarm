@@ -1,0 +1,18 @@
+{
+  "alert.air": "Air raid",
+  "alert.air_red": "Missiles (red)",
+  "alert.air_yellow": "Drones (yellow)",
+  "alert.artillery": "Artillery",
+  "alert.urban_fights": "Urban fighting",
+  "alert.chemical": "Chemical",
+  "alert.nuclear": "Nuclear",
+  "alert.unknown": "Alert",
+  "title.default": "Ukraine Alarm",
+  "setup.select_region": "Select a Ukraine Alarm region.",
+  "error.missing_core": "Install and configure Home Assistant Core for this widget.",
+  "error.fetch": "Could not load current Home Assistant states. Check the Home Assistant Core settings.",
+  "error.no_region": "No Ukraine Alarm data for this region. Check the ukraine_alarm integration in Home Assistant.",
+  "status.clear": "No alerts",
+  "status.since": "since {time}",
+  "status.history_error": "Could not load alert history"
+}

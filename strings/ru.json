@@ -1,0 +1,18 @@
+{
+  "alert.air": "Воздушная",
+  "alert.air_red": "Ракеты (красная)",
+  "alert.air_yellow": "Дроны (жёлтая)",
+  "alert.artillery": "Артобстрел",
+  "alert.urban_fights": "Уличные бои",
+  "alert.chemical": "Химическая",
+  "alert.nuclear": "Радиация",
+  "alert.unknown": "Тревога",
+  "title.default": "Тревоги",
+  "setup.select_region": "Выберите регион Ukraine Alarm.",
+  "error.missing_core": "Установите и настройте Home Assistant Core для этого виджета.",
+  "error.fetch": "Не удалось получить текущие состояния Home Assistant. Проверьте настройки Home Assistant Core.",
+  "error.no_region": "Нет данных Ukraine Alarm для этого региона. Проверьте интеграцию ukraine_alarm в Home Assistant.",
+  "status.clear": "Тревог нет",
+  "status.since": "с {time}",
+  "status.history_error": "Не удалось загрузить историю тревог"
+}

@@ -1,0 +1,193 @@
+{
+  "tesserae_compat": "1.x",
+  "name": "Home Assistant, Ukraine Alarm",
+  "version": "0.2.0",
+  "kind": "widget",
+  "description": "Current Ukraine Alarm alerts for one region from the Home Assistant ukraine_alarm integration: every active alert with its start time, above an alert timeline of up to 48 hours. Alert types can be hidden.",
+  "icon": "ph-siren",
+  "supports": {
+    "sizes": [
+      "xs",
+      "sm",
+      "md",
+      "lg"
+    ]
+  },
+  "cell_options": [
+    {
+      "name": "title",
+      "type": "string",
+      "label": "Title (blank = region name)",
+      "default": ""
+    },
+    {
+      "name": "title_scale",
+      "type": "slider",
+      "label": "Title size",
+      "default": 1.0,
+      "min": 0.5,
+      "max": 3.0,
+      "step": 0.05,
+      "unit": "×",
+      "help": "Scales the title bar together with its icon."
+    },
+    {
+      "name": "region",
+      "type": "select",
+      "label": "Region",
+      "default": "",
+      "choices_from": "region"
+    },
+    {
+      "name": "hidden_types",
+      "type": "multiselect",
+      "label": "Hidden alert types",
+      "default": [],
+      "help": "A hidden type is left out of the tiles and the timeline.",
+      "choices": [
+        {
+          "value": "air",
+          "label": "Air raid (no level)"
+        },
+        {
+          "value": "air_red",
+          "label": "Missiles (red)"
+        },
+        {
+          "value": "air_yellow",
+          "label": "Drones (yellow)"
+        },
+        {
+          "value": "artillery",
+          "label": "Artillery"
+        },
+        {
+          "value": "urban_fights",
+          "label": "Urban fighting"
+        },
+        {
+          "value": "chemical",
+          "label": "Chemical"
+        },
+        {
+          "value": "nuclear",
+          "label": "Nuclear"
+        },
+        {
+          "value": "unknown",
+          "label": "Unknown"
+        }
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "select",
+      "label": "Timeline",
+      "default": "24",
+      "choices": [
+        {
+          "value": "0",
+          "label": "Off"
+        },
+        {
+          "value": "6",
+          "label": "6 hours"
+        },
+        {
+          "value": "12",
+          "label": "12 hours"
+        },
+        {
+          "value": "24",
+          "label": "24 hours"
+        },
+        {
+          "value": "48",
+          "label": "2 days"
+        }
+      ]
+    },
+    {
+      "name": "icons_only",
+      "type": "boolean",
+      "label": "Icons only (no text in tiles)",
+      "default": false
+    }
+  ],
+  "data_schema": {
+    "fields": [
+      {
+        "name": "alert_count",
+        "label": "Active alerts",
+        "type": "num"
+      },
+      {
+        "name": "alerts",
+        "label": "Active alerts list",
+        "type": "arr"
+      },
+      {
+        "name": "history_error",
+        "label": "History error",
+        "type": "str"
+      },
+      {
+        "name": "timeline",
+        "label": "Alert spans within the timeline",
+        "type": "arr"
+      },
+      {
+        "name": "timeline_end",
+        "label": "Timeline end",
+        "type": "num"
+      },
+      {
+        "name": "timeline_hours",
+        "label": "Timeline length in hours (0 = off)",
+        "type": "num"
+      },
+      {
+        "name": "timeline_start",
+        "label": "Timeline start",
+        "type": "num"
+      },
+      {
+        "name": "title",
+        "label": "Title",
+        "type": "str"
+      }
+    ],
+    "sample": {
+      "alert_count": 0,
+      "alerts": [],
+      "history_error": "",
+      "timeline": [
+        [
+          1791966517147,
+          1791970334545
+        ],
+        [
+          1791980424543,
+          1791983554543
+        ],
+        [
+          1791986214544,
+          1791988664544
+        ]
+      ],
+      "timeline_end": 1792052917147,
+      "timeline_hours": 24,
+      "timeline_start": 1791966517147,
+      "title": "\u041a\u0438\u0457\u0432"
+    }
+  },
+  "render": {
+    "dither": "none",
+    "needs_network": true
+  },
+  "locales": [
+    "en",
+    "ru",
+    "uk"
+  ]
+}
